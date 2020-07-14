@@ -10,12 +10,36 @@
     </head>
     <body>
         <div class="container">
-            <div class="topbanner"><h1>AP World History SAQ Generator</h1></div>
-            <div class="maincontent"><h3>Hello World</h3></div>
-            <div class="footer"><h4>Hello world</h4></div>
+            <div class="topbanner"><h1>AP World History Example Generator</h1></div>
+            <div class="maincontent">
+              <h3>About this tool:</h3>
+              <p>This tool is designed to help teachers and students alike with creating practice questions to help develop skills and 
+                practice for the AP exam. It was designed by an AP World History teacher with the intent of creating a more dynamic and
+              somewhat unpredictable test practice activity.</p>
+              <h4>How to use:</h4>
+              <ol>
+                <li>Click the "Random Topic" button below to generate a randomized topic.</li>
+                <li>Fine-tune it (if you'd like) with the "Themes", "Skills", "Regions", and "Periods" buttons.</li>
+                <li>Teachers: torture your students with a DBQ, LEQ, or SAQ with the output. Click <a href="">here</a> for some
+                advice on writing AP history style prompts.</li>
+                <li>Students: test yourself - see if you can identify examples from the <a href="">CED</a> that would help answer
+                a question that asks what the generator spat out at you.</li>
+              </ol>
+              <div class="prompt_tool">
+                <div class="prompt_input">
+                  <h4>Prompt tool:</h4>
+                  <button class="prompt" onclick="generateTopic()">Random Topic</button>
+                </div>
+                <div class="prompt_output">
+                  <h4>Your prompt:</h4>
+                </div>
+            </div>
+            </div>
+            <div class="footer"><h5>DISCLAIMER: This application is in no way endorsed by the College Board. AP is a trademark of the 
+              College Board.</h5></div>
         </div>
         
         
-        <script src="" async defer></script>
+        <script src="main.js" async defer></script>
     </body>
 </html>
