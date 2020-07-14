@@ -11,13 +11,13 @@ body {
 
 .topbanner {
   text-align: center; 
-  background-color: #C3D2DE; 
+  background-color: #659DBD; 
   font-family: 'Volkhov', serif;
   color: rgb(39, 39, 39); 
 }
 
 .maincontent {
-  background-color:#c8dacf; 
+  background-color: floralwhite; 
   padding: 1em; 
 }
 
@@ -27,22 +27,45 @@ body {
 
 .prompt_tool {
   display: grid; 
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 250px auto;
 }
 
 button {
-  padding: 0.5em;
-  border-style: none; 
+  font-size: 18px; 
+  background-color: #df8084;
+  border: none;
+  border-radius: 3%;
+  border-bottom: 3px darkslategray solid;
+  border-right: 3px darkslategray solid; 
+  padding: 1em; 
+}
 
+button:hover {
+  opacity: 90%; 
+
+}
+
+button:active {
+  transform: translateY(2px); 
+  border-bottom: 1px black solid; 
+  border-right: 1px black solid; 
 }
 
 .prompt_input {
-  background-color: red;
-  text-align: center; 
-  padding: 1em; 
+  background: #FBEEC1;
+  text-align: left; 
+  padding: 2em; 
 }
 
 .prompt_output {
-  background-color: green; 
-  padding: 1em; 
+  background-color: whitesmoke; 
+  padding: 0.5em 0em 0em 1em; 
+}
+
+.radioChoices {
+  color: whitesmoke; 
+}
+
+input {
+  width: 85%; 
 }

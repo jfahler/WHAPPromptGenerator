@@ -10,33 +10,40 @@
     </head>
     <body>
         <div class="container">
-            <div class="topbanner"><h1>AP World History Example Generator</h1></div>
+            <div class="topbanner"><h1>AP World History Random SAQ Generator</h1></div>
             <div class="maincontent">
               <h3>About this tool:</h3>
               <p>This tool is designed to help teachers and students alike with creating practice questions to help develop skills and 
                 practice for the AP exam. It was designed by an AP World History teacher with the intent of creating a more dynamic and
               somewhat unpredictable test practice activity.</p>
+              <p>Please note that this tool is in its early stages and because of the random nature and large scope, may produce weird results.</p>
+              <p>It was heavily inspired by the <a href="https://www.sciencegeek.net/lingo.html">Educational Jargon Generator</a> at <a href="https://www.sciencegeek.net/">ScienceGeek.Net</a>.</p>
               <h4>How to use:</h4>
               <ol>
-                <li>Click the "Random Topic" button below to generate a randomized topic.</li>
-                <li>Fine-tune it (if you'd like) with the "Themes", "Skills", "Regions", and "Periods" buttons.</li>
-                <li>Teachers: torture your students with a DBQ, LEQ, or SAQ with the output. Click <a href="">here</a> for some
-                advice on writing AP history style prompts.</li>
-                <li>Students: test yourself - see if you can identify examples from the <a href="">CED</a> that would help answer
+                <li>Click the "Random Topic" button below to generate a randomized short answer question.</li>
+                <!-- <li>Fine-tune it (if you'd like) with the "Themes", "Skills", "Regions", and "Periods" buttons.</li> -->
+                <li>Teachers: torture your students with a <i>very</i> random SAQ with the output or, if you like, consider turning it into a DBQ or LEQ somehow.</li>
+                <li>Students: test yourself - see if you can identify examples from the <a href="https://apcentral.collegeboard.org/pdf/ap-world-history-modern-course-and-exam-description.pdf?course=ap-world-history-modern">CED</a> that would help answer
                 a question that asks what the generator spat out at you.</li>
               </ol>
               <div class="prompt_tool">
                 <div class="prompt_input">
-                  <h4>Prompt tool:</h4>
                   <button class="prompt" onclick="generateTopic()">Random Topic</button>
+                  <div class="radioChoices">
+                    <!-- Add input here -->
+                  </div>
                 </div>
                 <div class="prompt_output">
                   <h4>Your prompt:</h4>
+                  <form name="frmTest" onSubmit="return false">
+                    <input type="text" name="txtTest">
+                  </form>
                 </div>
             </div>
             </div>
             <div class="footer"><h5>DISCLAIMER: This application is in no way endorsed by the College Board. AP is a trademark of the 
-              College Board.</h5></div>
+              College Board.</h5>
+            <h6>Site created by Joshua Fahler, 2020.</h6></div>
         </div>
         
         
