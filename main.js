@@ -13,5 +13,4 @@ function generateTopic() {
   let randomizedPeriod = whPeriods[Math.floor(Math.random() * whPeriods.length)];  
   newPrompt.textContent = 'Evaluate ONE ' + randomizedTheme +' ' + randomizedSkill + ' in ' + randomizedRegion + ' during the period circa ' + randomizedPeriod + '.'; 
   output.appendChild(newPrompt); 
-  
 }

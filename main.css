@@ -1,13 +1,17 @@
 @media only screen and (max-width: 600px) {
-  * {
-    padding: 0; 
-    margin: 1px 0 1px; 
+  body {
+    margin: 0; 
+     
   }
 
   .prompt_tool {
     display: grid; 
     margin: 0; 
     width: 100%; 
+  }
+
+  .footer {
+    padding: 0.5em; 
   }
 
 }
