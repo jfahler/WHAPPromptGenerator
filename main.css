@@ -1,7 +1,6 @@
 @media only screen and (max-width: 600px) {
   * {
-    padding: 0; 
-    margin: 1px 0 1px; 
+    margin: 1px 0px 1px; 
   }
 
   .prompt_tool {
@@ -41,6 +40,7 @@ body {
 
 .prompt_tool {
   display: grid; 
+  margin: 0; 
   grid-template-columns: 100px 1fr;
 }
 
@@ -74,10 +74,17 @@ button:active {
 
 .prompt_output {
   background: beige;
-  padding: 0.5em 0em 1em 1em;
+  padding: 0em 0em 1em 1em;
 }
 
-.output_box {
+.saq_output_box {
+  background-color: white; 
+  width: 85%;
+  padding: 1em; 
+  border: purple 1.5px solid; 
+}
+
+.leq_output_box {
   background-color: white; 
   width: 85%;
   padding: 1em; 
