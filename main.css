@@ -1,3 +1,17 @@
+@media only screen and (max-width: 600px) {
+  * {
+    padding: 0; 
+    margin: 1px 0 1px; 
+  }
+
+  .prompt_tool {
+    display: grid; 
+    margin: 0; 
+    width: 100%; 
+  }
+
+}
+
 body {
   background-color: rgb(75, 75, 75); 
 }
@@ -27,7 +41,7 @@ body {
 
 .prompt_tool {
   display: grid; 
-  grid-template-columns: 250px auto;
+  grid-template-columns: 100px 1fr;
 }
 
 button {
@@ -37,7 +51,9 @@ button {
   border-radius: 3%;
   border-bottom: 3px darkslategray solid;
   border-right: 3px darkslategray solid; 
-  padding: 1em; 
+  margin: 0.5em 3px 0; 
+  color: whitesmoke; 
+  font-weight: bold; +
 }
 
 button:hover {
@@ -52,20 +68,26 @@ button:active {
 }
 
 .prompt_input {
-  background: #FBEEC1;
-  text-align: left; 
-  padding: 2em; 
+  background: beige;
+  text-align: center; 
 }
 
 .prompt_output {
-  background-color: whitesmoke; 
-  padding: 0.5em 0em 0em 1em; 
+  background: beige;
+  padding: 0.5em 0em 1em 1em;
+}
+
+.output_box {
+  background-color: white; 
+  width: 85%;
+  padding: 1em; 
+  border: purple 1.5px solid; 
 }
 
 .radioChoices {
   color: whitesmoke; 
 }
 
-input {
+textarea {
   width: 85%; 
 }

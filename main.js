@@ -1,4 +1,4 @@
-const output = document.querySelector('.prompt_output'); 
+const output = document.querySelector('.output_box'); 
 
 let whThemes = ['environmental', 'cultural', 'political', 'economic', 'social', 'technological']; 
 let whSkills = ['similarity', 'difference', 'change', 'continuity', 'cause', 'effect']; 
@@ -10,9 +10,8 @@ function generateTopic() {
   let randomizedTheme = whThemes[Math.floor(Math.random() * whThemes.length)]; 
   let randomizedSkill = whSkills[Math.floor(Math.random() * whSkills.length)]; 
   let randomizedRegion = whRegions[Math.floor(Math.random() * whRegions.length)];
-  let randomizedPeriod = whPeriods[Math.floor(Math.random() * whPeriods.length)]; 
-
-  let finalOutut = newPrompt.textContent; 
-  document.frmTest.txtTest.value = 'Evaluate ONE ' + randomizedTheme +' ' + randomizedSkill + ' in ' + randomizedRegion + ' during the period circa ' + randomizedPeriod + '.'; 
-  //output.appendChild(newPrompt); 
+  let randomizedPeriod = whPeriods[Math.floor(Math.random() * whPeriods.length)];  
+  newPrompt.textContent = 'Evaluate ONE ' + randomizedTheme +' ' + randomizedSkill + ' in ' + randomizedRegion + ' during the period circa ' + randomizedPeriod + '.'; 
+  output.appendChild(newPrompt); 
+  
 }
